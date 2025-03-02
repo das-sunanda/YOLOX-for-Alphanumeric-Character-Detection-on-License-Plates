@@ -45,19 +45,60 @@ python tools/eval.py -f exps/default/yolox_s.py -c yolox_s.pth -b 16 -d 1 --conf
 ```
 
 ## Performance Metrics
-| Metric | Score |
-|--------|-------|
-| AP@[IoU=0.50:0.95] | 0.777 |
-| AP@[IoU=0.50] | 0.990 |
-| AP@[IoU=0.75] | 0.958 |
-| AR@[IoU=0.50:0.95] | 0.817 |
+```
+Average forward time: 1.05 ms, Average NMS time: 0.49 ms, Average inference time: 1.54 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.777
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.990
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.958
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.699
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.779
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.807
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.760
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.817
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.817
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.731
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.815
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.839
+```
 
-### Per-Class Accuracy
-| Class | AP | Class | AP | Class | AP |
-|-------|----|-------|----|-------|----|
-| 0 | 80.554 | 1 | 68.107 | 2 | 77.374 |
-| 3 | 79.659 | 4 | 77.304 | 5 | 81.441 |
-| ... | ... | ... | ... | ... | ... |
+### Per-Class Average Precision (AP)
+```
+| class   | AP     | class   | AP     | class   | AP     |
+|:--------|:-------|:--------|:-------|:--------|:-------|
+| 0       | 80.554 | 1       | 68.107 | 2       | 77.374 |
+| 3       | 79.659 | 4       | 77.304 | 5       | 81.441 |
+| 6       | 79.270 | 7       | 77.363 | 8       | 79.281 |
+| 9       | 77.750 | A       | 81.287 | B       | 78.451 |
+| C       | 81.319 | D       | 76.091 | E       | nan    |
+| F       | 74.240 | G       | 79.487 | H       | 79.138 |
+| I       | nan    | J       | 76.719 | K       | 76.248 |
+| L       | 76.500 | M       | 75.626 | N       | 74.916 |
+| O       | nan    | P       | 78.617 | Q       | nan    |
+| R       | 80.986 | S       | 78.880 | T       | 75.628 |
+| U       | nan    | V       | 77.388 | W       | 78.024 |
+| X       | 76.362 | Y       | 77.427 | Z       | 78.341 |
+```
+### Per-Class Average Recall (AR)
+```
+| class   | AR     | class   | AR     | class   | AR     |
+|:--------|:-------|:--------|:-------|:--------|:-------|
+| 0       | 83.813 | 1       | 74.196 | 2       | 81.314 |
+| 3       | 82.701 | 4       | 81.611 | 5       | 85.034 |
+| 6       | 83.020 | 7       | 81.553 | 8       | 83.117 |
+| 9       | 82.078 | A       | 82.500 | B       | 82.407 |
+| C       | 83.966 | D       | 79.649 | E       | nan    |
+| F       | 78.571 | G       | 83.529 | H       | 83.774 |
+| I       | nan    | J       | 80.755 | K       | 81.282 |
+| L       | 79.412 | M       | 80.323 | N       | 81.489 |
+| O       | nan    | P       | 81.887 | Q       | nan    |
+| R       | 83.488 | S       | 82.632 | T       | 81.087 |
+| U       | nan    | V       | 81.905 | W       | 81.111 |
+| X       | 81.064 | Y       | 80.714 | Z       | 82.778 |
+```
+
+## Output Samples
+<img src="Outputs/output.png" width="600" height="400">
+
 
 ## Citation
 If you use this model, please cite the following:
