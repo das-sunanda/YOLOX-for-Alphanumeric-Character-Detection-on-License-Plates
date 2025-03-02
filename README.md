@@ -1,7 +1,7 @@
 # YOLOX for Alphanumeric Character Detection on License Plates
 
 ## Overview
-This repository contains the implementation and training pipeline for an alphanumeric character detection model based on YOLOX. The model is designed to localize and classify alphanumeric characters from license plates, leveraging a dataset derived from the UC3M-LP1 dataset, following the COCO annotation format.
+This repository contains the implementation and training pipeline for an alphanumeric character detection model based on YOLOX. The model is designed to localize and classify alphanumeric characters from license plates, leveraging a dataset derived from the UC3M-LP dataset, following the COCO annotation format.
 
 ## Features
 - Uses YOLOX-S for balanced accuracy and computational efficiency
