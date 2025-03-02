@@ -1,0 +1,10 @@
+ninja
+numpy
+opencv-python
+loguru
+tqdm
+thop
+tabulate
+psutil
+tensorboard
+pycocotools
