@@ -97,6 +97,8 @@ Average forward time: 1.05 ms, Average NMS time: 0.49 ms, Average inference time
 ```
 
 ## Output Samples
+Here are some sample predictions from the trained model:
+
 <img src="Outputs/output.png" width="600" height="400">
 
 
