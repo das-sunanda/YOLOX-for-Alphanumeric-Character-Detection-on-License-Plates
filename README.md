@@ -11,7 +11,7 @@ This repository contains the implementation and training pipeline for an alphanu
 - Trained for 200 epochs on an Nvidia A100 GPU
 
 ## Dataset
-The character detection dataset is derived from the UC3M-LP1 dataset, which provides annotated license plate images for European (Spanish) vehicles.
+The character detection dataset is derived from the UC3M-LP dataset, which provides annotated license plate images for European (Spanish) vehicles.
 - **Total unique vehicles:** 2,547
 - **Total annotated characters:** 12,757
 - **Classes:** 0-9, A-Z (36 classes)
