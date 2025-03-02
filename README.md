@@ -34,15 +34,6 @@ cd YOLOX
 python setup.py build develop
 ```
 
-## Training
-```bash
-python tools/train.py -f exps/default/yolox_s.py -d 1 -b 16 --fp16 -o
-```
-
-## Evaluation
-```bash
-python tools/eval.py -f exps/default/yolox_s.py -c yolox_s.pth -b 16 -d 1 --conf 0.01 --nms 0.65
-```
 ## Training Log
 ```
 ╒═══════════════════╤═════════════════════════════════════════╕
