@@ -23,8 +23,8 @@ Dataset source: [UC3M-LP Dataset](https://lsi.uc3m.es/2023/12/22/uc3m-lp-a-new-o
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/yolox-character-detection.git
-cd yolox-character-detection
+git clone https://github.com/das-sunanda/YOLOX-for-Alphanumeric-Character-Detection-on-License-Plates.git
+cd YOLOX-for-Alphanumeric-Character-Detection-on-License-Plates
 
 # Install dependencies
 pip install -r requirements.txt
